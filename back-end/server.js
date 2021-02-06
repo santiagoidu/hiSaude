@@ -17,7 +17,7 @@ mongoose.connect(uri, {
     if(err){
         console.log(err)
     }else{
-        console.log('MongoDB Conectado com sucesso')
+        console.log('MongoDB conectado com sucesso')
     }
 })
 
