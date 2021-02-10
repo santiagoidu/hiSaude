@@ -11,7 +11,7 @@ const uri = "mongodb+srv://saudeHi:HaekZLeaJy4IJnPP@cluster0.mrzzz.mongodb.net/h
 const port = process.env.PORT || 5000
 
 mongoose.connect(uri, { 
-    useUnifiedTopology: true,
+    useUnifiedTopology: true, 
     useNewUrlParser: true,
     useFindAndModify: false
 }, function (err){

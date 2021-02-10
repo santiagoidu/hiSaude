@@ -22,10 +22,17 @@ module.exports = {
         }
     },
     async datails(req, res){
-        const {_id} = req.query
+        const {_id} = req.params
         console.log({_id})
         const pacientes = await Paciente.findOne({_id})
 
         res.json(pacientes)
     },
+    async delete(req, res){
+        const {_id} = req.params
+
+        const pacientes = await Paciente.findByIdAndDelete({_id})
+
+        return res.json(pacientes)
+    }
 }
