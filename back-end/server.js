@@ -7,7 +7,7 @@ const mongoose = require('mongoose')
 const routes = require('./src/routes')
 
 const app = express();
-const uri = "mongodb+srv://saudeHi:HaekZLeaJy4IJnPP@cluster0.mrzzz.mongodb.net/<dbname>?retryWrites=true&w=majority"
+const uri = "mongodb+srv://saudeHi:HaekZLeaJy4IJnPP@cluster0.mrzzz.mongodb.net/hi-healtcare?retryWrites=true&w=majority"
 const port = process.env.PORT || 5000
 
 mongoose.connect(uri, { 

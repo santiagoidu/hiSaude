@@ -2,16 +2,17 @@ const Paciente = require('../models/pacientes.model')
 
 module.exports = {
     
-    
-    index(req, res){
-        res.json({message: "teste"})
+    async index(req, res){
+        const pacientes = await Paciente.find()
+
+        res.json(pacientes)
     },
     async create(req, res){
         const {nome_paciente, celular_paciente, data_nascimento, status_ativo, email_paciente, senha_paciente} = req.body
 
         let data = {}
 
-        let user = Paciente.findOne({email_paciente})
+        let user = await Paciente.findOne({email_paciente})
         if(!user){
             data = {nome_paciente, celular_paciente, data_nascimento, status_ativo, email_paciente, senha_paciente}
             user = await Paciente.create(data)
@@ -19,5 +20,12 @@ module.exports = {
         }else{
             return res.status(500).json(user)
         }
-    }
+    },
+    async datails(req, res){
+        const {_id} = req.query
+        console.log({_id})
+        const pacientes = await Paciente.findOne({_id})
+
+        res.json(pacientes)
+    },
 }
