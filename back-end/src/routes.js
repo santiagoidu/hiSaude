@@ -8,8 +8,9 @@ routes.get('/', Paciente.index)
 
 //Rotas de Pacientes 
 routes.post('/api/pacientes', Paciente.create)
-routes.get('/api/pacientes/', Paciente.index)
+routes.get('/api/pacientes', Paciente.index)
 routes.get('/api/pacientes.datails/:_id', Paciente.datails)
 routes.delete('/api/pacientes/:_id', Paciente.delete)
+routes.put('/api/pacientes', Paciente.update)
 
 module.exports = routes 

@@ -25,14 +25,19 @@ module.exports = {
         const {_id} = req.params
         console.log({_id})
         const pacientes = await Paciente.findOne({_id})
-
         res.json(pacientes)
     },
     async delete(req, res){
         const {_id} = req.params
-
         const pacientes = await Paciente.findByIdAndDelete({_id})
-
         return res.json(pacientes)
+    },
+    async update(req, res){
+        const { _id, nome_paciente, celular_paciente, data_nascimento, status_ativo, email_paciente, senha_paciente } = req.body
+        //console.log('req.body')
+        console.log(req)
+        const data = {nome_paciente, celular_paciente, data_nascimento, status_ativo, email_paciente, senha_paciente}
+        const pacientes = await Paciente.findOneAndUpdate({_id}, data, {new:true})
+        res.json(pacientes)
     }
 }
