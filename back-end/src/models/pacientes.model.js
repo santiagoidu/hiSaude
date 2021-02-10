@@ -10,7 +10,7 @@ const DataSchema = new mongoose.Schema({
     senha_paciente: String
 }, {
     timestamps:true
-})
+}) 
 
 DataSchema.pre('save', function(next){
     if(!this.isModified('senha_paciente')){
@@ -21,4 +21,4 @@ DataSchema.pre('save', function(next){
 })
 
 const pacientes = mongoose.model('Pacientes', DataSchema)
-module.exports = pacientes
+module.exports = pacientes 
