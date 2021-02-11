@@ -18,7 +18,7 @@ O **Back-End** deste teste é um Bonus. Logo, esta aplicação oferece CRUD comp
   
 Este projeto foi idealizado apos ganhar uma nova oportunidade para apresentação do meu teste.
   
-Essa aplicação foi realizada durante 1 (uma) semana mediante a varios outros projeto conciliando tasks e cumprindo mesmo com atraso tudo que me propus fazer, enfrentando alguns desafios na qual independete do resultado sinto muito satifisfeito em ter realizado e pela oportunidade em conduzir este projeto pois para mim não é somente mais um Crud mas sim algo na qual aprendi com isso. ENGRAÇADO QUE ISSO NÃO É PROJETO EDUCACIONAL MAS SIM DEMONSTRAÇÃO DE CONHECIMENTO, o que eu aprendi não foi com o desenvolvido mas melhorar organização do meu tempo (atraves do erro), lidar com adversidades e resolvê-las o mais rapido pois isso influencia na nossa imagem com o cliente mesmo que serviço seja de qualidade perdemos lguns pontos aqui.
+Essa aplicação foi realizada durante 1 (uma) semana mediante a varios outros projeto conciliando tasks e cumprindo mesmo com atraso tudo que me propus fazer, enfrentando alguns desafios na qual independete do resultado sinto muito satifisfeito em ter realizado e pela oportunidade em conduzir este projeto pois para mim não é somente mais um Crud mas sim algo na qual aprendi com isso. ENGRAÇADO QUE ISSO NÃO É PROJETO EDUCACIONAL MAS SIM DEMONSTRAÇÃO DE CONHECIMENTO, o que eu aprendi não foi com o desenvolvido mas melhorar organização do meu tempo (atraves do erro), lidar com adversidades e resolvê-las o mais rapido pois isso influencia na nossa imagem com o cliente mesmo que serviço seja de qualidade perdemos alguns pontos aqui.
 
 ## :rocket: Tecnologias
 
