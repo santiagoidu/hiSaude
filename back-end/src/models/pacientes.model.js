@@ -20,5 +20,13 @@ DataSchema.pre('save', function(next){
     next()
 })
 
+DataSchema.pre('findOneAndUpdate', function(next){
+    var password = this.getUpdate().senha_paciente+''
+    if(password.length<55){
+        this.getUpdate().senha_paciente = bcrypt.hashSync(password,10)
+    }
+    next()
+})
+
 const pacientes = mongoose.model('Pacientes', DataSchema)
 module.exports = pacientes 
