@@ -68,7 +68,7 @@ $ npm run dev
 > Veja a parte de **scripts {}** do arquivo <kbd>[package.json](./package.json)</kbd> para saber quais scripts estão disponíveis.
 
 
-> acesse: http://localhost:5000 pelo [link][insonia] ou [link][postman] para testar a api.
+> acesse: http://localhost:5000 pelo [insonia](https://insomnia.rest/) ou [postman](https://www.postman.com/downloads/) para testar a api.
 
 Veja os arquivos **`package.json`**
 
