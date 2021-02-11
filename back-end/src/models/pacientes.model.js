@@ -6,6 +6,13 @@ const DataSchema = new mongoose.Schema({
     celular_paciente: Number,
     data_nascimento: String,
     status_ativo: Boolean,
+    cep: String,
+    rua: String,
+    numero: Number,
+    complemento: String,
+    bairro: String,
+    cidade: String,
+    uf: String,
     email_paciente: String,
     senha_paciente: String
 }, {
