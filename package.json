@@ -6,6 +6,8 @@
   "scripts": {
     "client": "npm start --prefix client",
     "server": "nodemon server.js",
+    "server-prodution": "server.js",
+    "prodution": "concurrently \"npm run server-prodution\" \"npm run client\"",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
