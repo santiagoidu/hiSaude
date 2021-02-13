@@ -2,31 +2,20 @@ import React from 'react';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import ListSubheader from '@material-ui/core/ListSubheader';
 import BuildIcon from '@material-ui/icons/Build';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import PeopleIcon from '@material-ui/icons/People';
-import BarChartIcon from '@material-ui/icons/BarChart';
-import LayersIcon from '@material-ui/icons/Layers';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 
 export const mainListItems = (
   <div>
     <ListItem button>
       <ListItemIcon>
-        <AssignmentIcon />
+        <AssignmentIcon style={{color: '#068D54'}}/>
       </ListItemIcon>
       <ListItemText primary="Pacientes" />
     </ListItem>
-  </div>
-);
-
-export const secondaryListItems = (
-  <div>
-    <ListSubheader inset>Configurações</ListSubheader>
     <ListItem button>
       <ListItemIcon>
-        <BuildIcon />
+        <BuildIcon style={{color: '#068D54'}}/>
       </ListItemIcon>
       <ListItemText primary="Alterar Senha" />
     </ListItem>

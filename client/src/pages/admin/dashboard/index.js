@@ -18,16 +18,17 @@ import Link from '@material-ui/core/Link';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import { mainListItems, secondaryListItems } from '../../../components/menu-admin';
+import { mainListItems } from '../../../components/menu-admin';
 import logoHiToolbar from '../../../assets/img/logo-hi-horizontal.png'
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import '../../../assets/css/Hi.css'
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://github.com">
-        iDU! Softwares
+      <Link color="inherit" href="https://github.com/santiagoidu">
+        CRUD for Hi! Healtcare Intelligence
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -81,7 +82,8 @@ const useStyles = makeStyles((theme) => ({
     position: 'relative',
     whiteSpace: 'nowrap',
     width: drawerWidth,
-    backgroundColor: '#999999',
+    backgroundColor: '#777',
+    color: '#fff',
     transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
@@ -145,10 +147,8 @@ export default function Dashboard() {
           >
             <MenuIcon />
           </IconButton>
-          <IconButton color="inherit">
-            <Badge badgeContent={4} color="secondary">
-              <NotificationsIcon />
-            </Badge>
+          <IconButton color="inherit" style={{position: 'absolute', left: '94%'}}>
+              <PowerSettingsNewIcon />
           </IconButton>
         </Toolbar>
       </AppBar>
@@ -167,7 +167,6 @@ export default function Dashboard() {
         <Divider />
         <List>{mainListItems}</List>
         <Divider />
-        <List>{secondaryListItems}</List>
       </Drawer>
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
