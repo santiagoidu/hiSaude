@@ -1,0 +1,7 @@
+/* Logo da HI branca png transparente no toolbar localizado no canto superior esquerdo */
+.logoHiHorizontal {
+    left: -17.6em;
+    padding-left: 52px;
+    display: flex;
+    position: absolute;
+}
