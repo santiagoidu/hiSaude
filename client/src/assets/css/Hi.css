@@ -1,9 +1,37 @@
 /* Logo da HI branca png transparente no toolbar localizado no canto superior esquerdo */
 .logoHiHorizontal {
-    left: -17.6em;
-    padding-left: 52px;
     display: flex;
     position: absolute;
-    align-content: flex-end;
+    left: -17.6em;
+    padding-left: 52px;
 }
+
+/*Painel de Cadastro de Paciente */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.register {
+    justify-content: space-between;
+}
+
+.registerTitle{
+    color: #068D54;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    padding-left: 42.25px;
+}
+
+/* COMPONENT DataCompleta */
+/* ATENÇÃO! font Museo Sans-300 É PAGA pelo GOOGLE FONTS importada/donwload de forma FREE/pirata*/
+@import url('../font/FontsFree-Net-Museo-Sans10.ttf');
+.date{
+    font-family: 'Museo Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+
 

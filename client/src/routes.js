@@ -32,7 +32,6 @@ export default function Routes(){
                 <Route path="/admin/pacientes/cadastrar" exact component={PacientesCadastrar} />
                 <Route path="/admin/pacientes/editar/:idPaciente" exact component={PacientesEditar} />
       
-                <Route path="/admin" exact component={Dashboard} />
                 <Route path="/admin/usuario" exact component={Usuarios} />
                 <Route path="/admin/usuario/cadastrar" exact component={UsuariosCadastrar} />
                 <Route path="/admin/usuario/editar/:idUsuario" exact component={UsuariosEditar} />
