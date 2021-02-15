@@ -63,6 +63,7 @@ export default function PacienteCadastrar() {
               <h1 className="registerTitle">Cadastro de Paciente</h1>
               <DataCompleta />
             </div>
+            
           </Grid>
           <Box pt={4}>
             <Footer />

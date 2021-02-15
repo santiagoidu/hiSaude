@@ -53,9 +53,6 @@ const useStyles = makeStyles((theme) => ({
     menuButtonHidden: {
       display: 'none',
     },
-    title: {
-      flexGrow: 1,
-    },
     drawerPaper: {
       position: 'relative',
       whiteSpace: 'nowrap',
@@ -107,12 +104,13 @@ export default function MenuAdmin() {
           >
             <MenuIcon />
           </IconButton>
-          <IconButton color="inherit" style={{position: 'absolute', left:'78%', alignContent: 'flex-end', overflow: 'auto'}}>
-          <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-                        Ana Maria Pereira
+          <IconButton color="inherit" className="userName">
+          <Typography component="h3" variant="h6" color="inherit" noWrap  style={{paddingRight: '10px'}}>
+                        Ana Maria Pereira    
           </Typography> 
           <PowerSettingsNewIcon />
           </IconButton>
+          
         </Toolbar>
       </AppBar>
         <Drawer

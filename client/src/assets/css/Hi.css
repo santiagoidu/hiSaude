@@ -4,7 +4,16 @@
     position: absolute;
     left: -17.6em;
     padding-left: 52px;
+    
 }
+
+/* Nome usuario e logout no toolbar localizado no canto superior direito */
+.userName {
+    position: absolute;
+    left: 78%;
+    justify-content: space-between;
+       overflow: hidden;
+;}
 
 /*Painel de Cadastro de Paciente */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
@@ -35,7 +44,7 @@
     text-align: right;
     color: rgba(0, 0, 0, 0.5);
 
-    right: 4%;
+    right: 10%;
     top: 109px;
     margin: auto;
     padding: auto;
