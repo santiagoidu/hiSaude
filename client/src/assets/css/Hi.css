@@ -4,4 +4,6 @@
     padding-left: 52px;
     display: flex;
     position: absolute;
+    align-content: flex-end;
 }
+
