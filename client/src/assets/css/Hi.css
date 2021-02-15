@@ -11,7 +11,6 @@
 .register {
     justify-content: space-between;
 }
-
 .registerTitle{
     color: #068D54;
     font-family: 'Open Sans';
@@ -21,7 +20,10 @@
 
 /* COMPONENT DataCompleta */
 /* ATENÇÃO! font Museo Sans-300 É PAGA pelo GOOGLE FONTS importada/donwload de forma FREE/pirata*/
-@import url('../font/FontsFree-Net-Museo-Sans10.ttf');
+@font-face {
+    font-family: Museo Sans;
+    src:  url('../font/FontsFree-Net-Museo-Sans10.ttf');
+}
 .date{
     font-family: 'Museo Sans';
     font-size: 14px;
