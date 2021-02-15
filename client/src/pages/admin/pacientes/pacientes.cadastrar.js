@@ -1,11 +1,10 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Box from '@material-ui/core/Box';
-import {MuiThemeProvider , createMuiTheme} from '@material-ui/core';
 
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
+import TextField from '@material-ui/core/TextField';
 import Paper from '@material-ui/core/Paper';
 
 import '../../../assets/css/Hi.css';
@@ -48,13 +47,12 @@ const useStyles = makeStyles((theme) => ({
 
 export default function PacienteCadastrar() {
   const classes = useStyles();
-  
+
   return (
     <div className={classes.root}>
-      <CssBaseline />
-      
+
       <MenuAdmin />
-      
+
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
@@ -63,11 +61,35 @@ export default function PacienteCadastrar() {
               <h1 className="registerTitle">Cadastro de Paciente</h1>
               <DataCompleta />
             </div>
+            <div className="formData">
+              <Grid container spacing={2}>
+                <Grid item xs={12} sm={6}>
+                  <TextField
+                    required
+                    id="nome_paciente"
+                    name="firstName"
+                    label="Nome"
+                    fullWidth
+                    autoComplete="given-name"
+                  />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <TextField
+                    required
+                    id="lastName"
+                    name="lastName"
+                    label="Last name"
+                    fullWidth
+                    autoComplete="family-name"
+                  />
+                </Grid>
+                </Grid>
+                </div>
             
           </Grid>
-          <Box pt={4}>
-            <Footer />
-          </Box>
+            <Box pt={4}>
+              <Footer />
+            </Box>
         </Container>
       </main>
     </div>

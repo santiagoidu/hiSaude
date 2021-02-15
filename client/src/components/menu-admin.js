@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import clsx from 'clsx';
 
 import IconButton from '@material-ui/core/IconButton';
@@ -92,6 +93,7 @@ export default function MenuAdmin() {
     };
     return (
         <>
+        <CssBaseline />
         <AppBar position="absolute" className={clsx(classes.appBar, open && classes.appBarShift)}>
         <Toolbar className={classes.toolbar}>
         <img src={LogoHiToolbar} className="logoHiHorizontal"/>
