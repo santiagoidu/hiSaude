@@ -9,7 +9,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 
 import '../../../assets/css/Hi.css';
-import dataCompleta from '../../../components/dataCompleta'
+import DataCompleta from '../../../components/dataCompleta'
 
 import MenuAdmin from '../../../components/menu-admin';
 
@@ -61,7 +61,7 @@ export default function PacienteCadastrar() {
           <Grid container spacing={3}>
             <div className="register">
               <h1 className="registerTitle">Cadastro de Paciente</h1>
-              <dataCompleta />
+              <DataCompleta />
             </div>
           </Grid>
           <Box pt={4}>

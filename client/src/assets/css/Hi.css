@@ -9,6 +9,7 @@
 /*Painel de Cadastro de Paciente */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 .register {
+    display: flex;
     justify-content: space-between;
 }
 .registerTitle{
@@ -25,14 +26,20 @@
     src:  url('../font/FontsFree-Net-Museo-Sans10.ttf');
 }
 .date{
-    font-family: 'Museo Sans';
+    font-family: 'Museo Sans', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
     line-height: 20px;
     letter-spacing: 0.10000000149011612px;
     text-align: right;
-    color: rgba(0, 0, 0, 0.5)
+    color: rgba(0, 0, 0, 0.5);
+
+    right: 4%;
+    top: 109px;
+    margin: auto;
+    padding: auto;
+    position: absolute;
 }
 
 
