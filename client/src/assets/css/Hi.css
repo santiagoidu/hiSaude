@@ -1,3 +1,11 @@
+/* IMPORTS FONTES */
+/* ATENÇÃO! font Museo Sans-300 É PAGA pelo GOOGLE FONTS importada/donwload de forma FREE/pirata*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@font-face {
+    font-family: Museo Sans;
+    src:  url('../font/FontsFree-Net-Museo-Sans10.ttf');
+}
+
 /* Logo da HI branca png transparente no toolbar localizado no canto superior esquerdo */
 .logoHiHorizontal {
     display: flex;
@@ -7,16 +15,25 @@
     
 }
 
+/* Footer */
+.footer {
+    position: absolute;
+    top: 87%;
+    margin-left: 30%;
+    width: 395px;
+    overflow: hidden;
+}
+
+
 /* Nome usuario e logout no toolbar localizado no canto superior direito */
 .userName {
     position: absolute;
     left: 78%;
     justify-content: space-between;
-       overflow: hidden;
+    overflow: hidden;
 ;}
 
 /*Painel de Cadastro de Paciente */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 .register {
     display: flex;
     justify-content: space-between;
@@ -28,12 +45,49 @@
     padding-left: 42.25px;
 }
 
-/* COMPONENT DataCompleta */
-/* ATENÇÃO! font Museo Sans-300 É PAGA pelo GOOGLE FONTS importada/donwload de forma FREE/pirata*/
-@font-face {
-    font-family: Museo Sans;
-    src:  url('../font/FontsFree-Net-Museo-Sans10.ttf');
+.formData {
+    position: absolute;
+    width: 915px;
+    height: 231px;
+    left: 286px;
+    top: 159px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 14px rgba(53, 64, 82, 0.2);
+    border-radius: 10px;
 }
+
+.titleForm1{
+    margin: 29px 0px 22px 37px;
+
+    color: #068D54;
+    font: 'Open Sans';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.inputForm {
+    padding: 5px;
+}
+
+.fieldsetNome {
+    color: rgba(255, 255, 255, 0.5);
+    left: 323px;
+    top: 261px;
+    margin: 0px 27px 37px 37px;
+
+    border: 0.5px solid rgba(0, 0, 0, 0.42);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.legend {
+    font-size: 12px;
+    color: rgba(78, 78, 78, 0.5);
+}
+
+/* COMPONENT DataCompleta */
 .date{
     font-family: 'Museo Sans', sans-serif;
     font-size: 14px;
@@ -50,6 +104,9 @@
     padding: auto;
     position: absolute;
 }
+
+/* Responsividade */
+
 
 
 
