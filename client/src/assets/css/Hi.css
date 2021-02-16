@@ -6,9 +6,6 @@
     src:  url('../font/FontsFree-Net-Museo-Sans10.ttf');
 }
 
-html {
-    overflow: hidden;
-}
 /* Logo da HI branca png transparente no toolbar localizado no canto superior esquerdo */
 .logoHiHorizontal {
     display: flex;
@@ -30,10 +27,11 @@ html {
 
 /* Nome usuario e logout no toolbar localizado no canto superior direito */
 .userName {
+
     position: absolute;
     left: 78%;
     justify-content: space-between;
-    overflow: hidden;
+    
 ;}
 
 /*Painel de Cadastro de Paciente */
@@ -74,11 +72,22 @@ html {
     padding: 5px;
 }
 
-.fieldsetNome {
+.fieldsetName {
     color: rgba(255, 255, 255, 0.5);
     left: 323px;
     top: 261px;
-    margin: 0px 27px 37px 37px;
+    margin: 0px 7px 37px 37px;
+
+    border: 0.5px solid rgba(0, 0, 0, 0.42);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.fieldsetNumber {
+    color: rgba(255, 255, 255, 0.5);
+    left: 323px;
+    top: 261px;
+    margin: 0px 37px 37px 7px;
 
     border: 0.5px solid rgba(0, 0, 0, 0.42);
     box-sizing: border-box;

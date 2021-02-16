@@ -113,7 +113,7 @@ export default function MenuAdmin() {
           >
             <MenuIcon />
           </IconButton>
-          <IconButton color="inherit" className="userName">
+          <IconButton color="inherit" className="userName"  >
           <Typography component="h3" variant="h6" color="inherit" noWrap  style={{paddingRight: '10px'}}>
                         Ana Maria Pereira    
           </Typography> 

@@ -76,7 +76,7 @@ export default function PacienteCadastrar() {
               <h2 className="titleForm1">Dados Pessoais</h2>
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6} className="inputForm">
-                  <fieldset className="fieldsetNome" label="Nome">
+                  <fieldset className="fieldsetName" label="Name">
                   <legend className="legend">Nome</legend>
                   <TextField
                     required
@@ -90,15 +90,15 @@ export default function PacienteCadastrar() {
 
                 </Grid>
                 <Grid item xs={12} sm={6} className="inputForm">
-                <fieldset className="fieldset" label="Nome">
-                  <legend>Nome</legend>
+                <fieldset className="fieldsetNumber" label="UserNumber">
+                  <legend className="legend">Celular</legend>
                   <TextField
                     required
                     id="lastName"
-                    name="lastName"
-                    label="Last name"
+                    name="userNumber"
                     fullWidth
                     autoComplete="family-name"
+                    className={classes.input}
                   />
                   </fieldset>
                 </Grid>
