@@ -4,11 +4,13 @@ import Box from '@material-ui/core/Box';
 
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import TextField from '@material-ui/core/TextField';
 import Paper from '@material-ui/core/Paper';
 
 import '../../../assets/css/Hi.css';
 import DataCompleta from '../../../components/dataCompleta'
+
+import InputText from '../../../components/inputs/inputText'
+import InputNumberPhone from '../../../components/inputs/inputNumber'
 
 import MenuAdmin from '../../../components/menu-admin';
 
@@ -43,17 +45,6 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'hidden',
     flexDirection: 'column',
   },
-  input: {
-    font: 'inherit',
-    color: '#000',
-    border: '0',
-    height:'27px',
-    margin: '0',
-    display: 'block',
-    padding:'1px 1px 2px',
-    minWidth: '0',
-    background: 'none',
-  },
 }));
 
 export default function PacienteCadastrar() {
@@ -78,28 +69,13 @@ export default function PacienteCadastrar() {
                 <Grid item xs={12} sm={6} className="inputForm">
                   <fieldset className="fieldsetName" label="Name">
                   <legend className="legend">Nome</legend>
-                  <TextField
-                    required
-                    id="nome_paciente"
-                    name="firstName"
-                    fullWidth
-                    autoComplete="given-name"
-                    className={classes.input}
-                  />
+                  <InputText />
                   </fieldset>
-
                 </Grid>
                 <Grid item xs={12} sm={6} className="inputForm">
                 <fieldset className="fieldsetNumber" label="UserNumber">
                   <legend className="legend">Celular</legend>
-                  <TextField
-                    required
-                    id="lastName"
-                    name="userNumber"
-                    fullWidth
-                    autoComplete="family-name"
-                    className={classes.input}
-                  />
+                    <InputNumberPhone />
                   </fieldset>
                 </Grid>
               </Grid>

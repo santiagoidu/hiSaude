@@ -1,12 +1,28 @@
 import React from 'react'
 import {useForm} from 'react-hook-form'
 
-import '../../assets/css/Hi.css'
+const normalizeNumber = (value) => {
+    return value.replace(/\D/g,"").replace(/^(\d{2})(\d)/g,"($1) $2").replace(/(\d)(\d{4})$/,"$1-$2").substr(0, 15) || ""
+  }
 
-export default function InputNumber() {
+export default function InputNumberPhone() {
+    const { register, handleSubmit } = useForm();
   return (
-    <div>
-      <h1>Input Numero celular</h1>
-    </div>
+    <input
+          placeholder="(11) 99999-9999"
+          type="tel"
+          inputMode="numeric"
+          autoComplete="phone"
+          name="celular_paciente"
+          id="celular_paciente"
+          className="input"
+          fullWidth
+          required
+          onChange={(event) => {
+            const {value} = event.target
+            event.target.value = normalizeNumber(value)
+          }}
+          ref={register}
+        />
   );
 }
