@@ -6,6 +6,11 @@
     src:  url('../font/FontsFree-Net-Museo-Sans10.ttf');
 }
 
+/* Scroll None*/
+body {
+    overflow: hidden;
+}
+
 /* Logo da HI branca png transparente no toolbar localizado no canto superior esquerdo */
 .logoHiHorizontal {
     display: flex;
@@ -94,7 +99,7 @@
     color: rgba(255, 255, 255, 0.5);
     left: 323px;
     top: 261px;
-    margin: 0px 7px 37px 37px;
+    margin: 0px 7px 18.5px 37px;
 
     border: 0.5px solid rgba(0, 0, 0, 0.42);
     box-sizing: border-box;
@@ -103,9 +108,19 @@
 
 .fieldsetNumber {
     color: rgba(255, 255, 255, 0.5);
-    left: 323px;
     top: 261px;
-    margin: 0px 37px 37px 7px;
+    margin: 0px 7px 37px 37px;
+
+    border: 0.5px solid rgba(0, 0, 0, 0.42);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.fieldsetOptions {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.5);
+    top: 137px;
+    margin: 18.5px 37px 37px 37px;
 
     border: 0.5px solid rgba(0, 0, 0, 0.42);
     box-sizing: border-box;

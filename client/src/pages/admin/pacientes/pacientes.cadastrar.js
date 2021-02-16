@@ -11,6 +11,7 @@ import DataCompleta from '../../../components/dataCompleta'
 
 import InputText from '../../../components/inputs/inputText'
 import InputNumberPhone from '../../../components/inputs/inputNumber'
+import SelectStatus from '../../../components/inputs/selectStatus'
 
 import MenuAdmin from '../../../components/menu-admin';
 
@@ -67,15 +68,27 @@ export default function PacienteCadastrar() {
               <h2 className="titleForm1">Dados Pessoais</h2>
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6} className="inputForm">
-                  <fieldset className="fieldsetName" label="Name">
+                  <fieldset className="fieldsetName">
                   <legend className="legend">Nome</legend>
                   <InputText />
                   </fieldset>
                 </Grid>
                 <Grid item xs={12} sm={6} className="inputForm">
-                <fieldset className="fieldsetNumber" label="UserNumber">
+                <fieldset className="fieldsetNumber">
                   <legend className="legend">Celular</legend>
                     <InputNumberPhone />
+                  </fieldset>
+                </Grid>
+                <Grid item xs={12} sm={6} className="inputForm">
+                  <fieldset className="fieldsetOptions">
+                  <legend className="legend">Nome</legend>
+                  <SelectStatus />
+                  </fieldset>
+                </Grid>
+                <Grid item xs={12} sm={6} className="inputForm">
+                  <fieldset className="fieldsetName">
+                  <legend className="legend">Nome</legend>
+                  <InputText />
                   </fieldset>
                 </Grid>
               </Grid>
