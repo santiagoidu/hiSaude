@@ -6,6 +6,9 @@
     src:  url('../font/FontsFree-Net-Museo-Sans10.ttf');
 }
 
+html {
+    overflow: hidden;
+}
 /* Logo da HI branca png transparente no toolbar localizado no canto superior esquerdo */
 .logoHiHorizontal {
     display: flex;
@@ -18,7 +21,7 @@
 /* Footer */
 .footer {
     position: absolute;
-    top: 87%;
+    top: 88%;
     margin-left: 30%;
     width: 395px;
     overflow: hidden;
@@ -106,7 +109,6 @@
 }
 
 /* Responsividade */
-
 
 
 

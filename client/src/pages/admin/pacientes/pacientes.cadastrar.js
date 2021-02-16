@@ -40,8 +40,19 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     display: 'flex',
-    overflow: 'auto',
+    overflow: 'hidden',
     flexDirection: 'column',
+  },
+  input: {
+    font: 'inherit',
+    color: '#000',
+    border: '0',
+    height:'27px',
+    margin: '0',
+    display: 'block',
+    padding:'1px 1px 2px',
+    minWidth: '0',
+    background: 'none',
   },
 }));
 
@@ -62,18 +73,25 @@ export default function PacienteCadastrar() {
               <DataCompleta />
             </div>
             <div className="formData">
+              <h2 className="titleForm1">Dados Pessoais</h2>
               <Grid container spacing={2}>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={6} className="inputForm">
+                  <fieldset className="fieldsetNome" label="Nome">
+                  <legend className="legend">Nome</legend>
                   <TextField
                     required
                     id="nome_paciente"
                     name="firstName"
-                    label="Nome"
                     fullWidth
                     autoComplete="given-name"
+                    className={classes.input}
                   />
+                  </fieldset>
+
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={6} className="inputForm">
+                <fieldset className="fieldset" label="Nome">
+                  <legend>Nome</legend>
                   <TextField
                     required
                     id="lastName"
@@ -82,14 +100,15 @@ export default function PacienteCadastrar() {
                     fullWidth
                     autoComplete="family-name"
                   />
+                  </fieldset>
                 </Grid>
-                </Grid>
-                </div>
-            
-          </Grid>
-            <Box pt={4}>
-              <Footer />
+              </Grid>
+            </div>
+            <Box pt={4} className="footer">
+              <Footer className="textFooter"/>
             </Box>
+          </Grid>
+
         </Container>
       </main>
     </div>

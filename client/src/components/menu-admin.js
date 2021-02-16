@@ -55,6 +55,7 @@ const useStyles = makeStyles((theme) => ({
       display: 'none',
     },
     drawerPaper: {
+      overflowX: 'hidden',
       position: 'relative',
       whiteSpace: 'nowrap',
       width: drawerWidth,
@@ -79,6 +80,12 @@ const useStyles = makeStyles((theme) => ({
     appBarSpacer: theme.mixins.toolbar,
     fixedHeight: {
       height: 240,
+    },
+    paper: {
+      padding: theme.spacing(2),
+      display: 'flex',
+      overflow: 'hidden',
+      flexDirection: 'column',
     },
   }));
 
@@ -121,6 +128,7 @@ export default function MenuAdmin() {
                 paper: clsx(classes.drawerPaper, !open && classes.drawerPaperClose),
             }}
             open={open}
+            
         >
             <div className={classes.toolbarIcon}>
                 <IconButton onClick={handleDrawerClose}>
