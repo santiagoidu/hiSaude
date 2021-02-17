@@ -6,7 +6,7 @@ const normalizeNumber = (value) => {
   }
 
 export default function InputNumberPhone() {
-    const { register, handleSubmit } = useForm();
+    const { register } = useForm();
   return (
     <input
           placeholder="(11) 99999-9999"
@@ -16,7 +16,6 @@ export default function InputNumberPhone() {
           name="celular_paciente"
           id="celular_paciente"
           className="input"
-          fullWidth
           required
           onChange={(event) => {
             const {value} = event.target

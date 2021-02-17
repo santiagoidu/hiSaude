@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets/css/Hi.css'
+import '../assets/css/dataCompleta.css'
 
 function  DataCompleta() {
     let mes = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "novembro", "dezembro"]

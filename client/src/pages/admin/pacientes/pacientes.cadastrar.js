@@ -7,11 +7,13 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 
 import '../../../assets/css/Hi.css';
+import '../../../assets/css/form.css';
 import DataCompleta from '../../../components/dataCompleta'
 
 import InputText from '../../../components/inputs/inputText'
 import InputNumberPhone from '../../../components/inputs/inputNumber'
 import SelectStatus from '../../../components/inputs/selectStatus'
+import InputBirthDate from '../../../components/inputs/inputBirthDate'
 
 import MenuAdmin from '../../../components/menu-admin';
 
@@ -81,14 +83,14 @@ export default function PacienteCadastrar() {
                 </Grid>
                 <Grid item xs={12} sm={6} className="inputForm">
                   <fieldset className="fieldsetOptions">
-                  <legend className="legend">Nome</legend>
+                  <legend className="legend">Status</legend>
                   <SelectStatus />
                   </fieldset>
                 </Grid>
                 <Grid item xs={12} sm={6} className="inputForm">
-                  <fieldset className="fieldsetName">
-                  <legend className="legend">Nome</legend>
-                  <InputText />
+                  <fieldset className="fieldsetBirth">
+                  <legend className="legend">Data Nascimento</legend>
+                  <InputBirthDate />
                   </fieldset>
                 </Grid>
               </Grid>

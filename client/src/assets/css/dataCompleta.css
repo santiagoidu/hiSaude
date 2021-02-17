@@ -1,0 +1,17 @@
+/* COMPONENT DataCompleta */
+.date{
+    font-family: 'Museo Sans', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.5);
+
+    right: 5.8%;
+    top: 109px;
+    margin: auto;
+    padding: auto;
+    position: absolute;
+}

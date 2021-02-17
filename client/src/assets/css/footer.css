@@ -1,0 +1,8 @@
+/* Footer */
+.footer {
+    position: absolute;
+    top: 88%;
+    margin-left: 30%;
+    width: 395px;
+    overflow: hidden;
+}

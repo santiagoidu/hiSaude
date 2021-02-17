@@ -1,12 +1,20 @@
-import React from 'react'
-import {useForm} from 'react-hook-form'
+import React, { useState } from 'react'
+import DatePicker from 'react-datepicker'
 
-import '../../assets/css/Hi.css'
+import 'react-datepicker/dist/react-datepicker.css'
 
-export default function InputNumber() {
+export default function InputBirthDate() {
+  const [selectedDate, setSelectedDate] = useState(null)
+
   return (
-    <div>
-      <h1>Input Numero celular</h1>
-    </div>
+
+    <DatePicker
+    selected={selectedDate}
+    onChange={date => setSelectedDate(date)}
+    id ="data_nascimento"
+    required
+    className="input"
+    />
+
   );
 }
