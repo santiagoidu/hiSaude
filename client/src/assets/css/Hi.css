@@ -6,11 +6,6 @@
     src:  url('../font/FontsFree-Net-Museo-Sans10.ttf');
 }
 
-/* Scroll None*/
-body {
-    overflow: hidden;
-}
-
 /* Logo da HI branca png transparente no toolbar localizado no canto superior esquerdo */
 .logoHiHorizontal {
     display: flex;
@@ -29,7 +24,16 @@ body {
     
 ;}
 
+/* Scroll None */
+body {
+    overflow: hidden, visible;
+}
+
 /*Painel de Cadastro de Paciente */
+.scrollInput {
+    overflow: visible !important;
+}
+
 .register {
     display: flex;
     justify-content: space-between;
@@ -41,10 +45,4 @@ body {
     padding-left: 42.25px;
 }
 
-
-
-
 /* Responsividade */
-
-
-

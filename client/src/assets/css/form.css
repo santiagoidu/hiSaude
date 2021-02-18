@@ -1,10 +1,22 @@
 /* Estilização dos inputs dos formularios */
-.formData {
+.formData1 {
+    position: absolute;
+    width: 940px;
+    height: 216px;
+    left: 286px;
+    top: 144px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 14px rgba(53, 64, 82, 0.2);
+    border-radius: 10px;
+}
+
+.formData2 {
     position: absolute;
     width: 940px;
     height: 241px;
     left: 286px;
-    top: 159px;
+    top: 379px;
 
     background: #FFFFFF;
     box-shadow: 0px 0px 14px rgba(53, 64, 82, 0.2);

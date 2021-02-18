@@ -61,12 +61,14 @@ export default function PacienteCadastrar() {
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
+        <div className="scrollInput">
           <Grid container spacing={3}>
             <div className="register">
               <h1 className="registerTitle">Cadastro de Paciente</h1>
               <DataCompleta />
             </div>
-            <div className="formData">
+            
+            <div className="formData1">
               <h2 className="titleForm1">Dados Pessoais</h2>
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6} className="inputForm">
@@ -99,7 +101,10 @@ export default function PacienteCadastrar() {
               <Footer className="textFooter"/>
             </Box>
           </Grid>
-
+          <div className="formData2">
+          <h2 className="titleForm1">Dados Pessoais</h2>
+          </div>
+          </div>
         </Container>
       </main>
     </div>
