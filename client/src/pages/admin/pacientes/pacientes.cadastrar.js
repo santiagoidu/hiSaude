@@ -2,9 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
+import { Button, Container, Grid, Paper } from '@material-ui/core';
 
 import '../../../assets/css/Hi.css';
 import '../../../assets/css/form.css';
@@ -14,6 +12,8 @@ import InputText from '../../../components/inputs/inputText'
 import InputNumberPhone from '../../../components/inputs/inputNumber'
 import SelectStatus from '../../../components/inputs/selectStatus'
 import InputBirthDate from '../../../components/inputs/inputBirthDate'
+import InputAdress from '../../../components/inputs/inputAdress'
+
 
 import MenuAdmin from '../../../components/menu-admin';
 
@@ -48,9 +48,26 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'hidden',
     flexDirection: 'column',
   },
+  saveData: {
+    display: 'flex',
+    position: 'absolute',
+    top: '635px',
+    left: '604px',
+    backgroundColor: '#068D54',
+    color: '#fff',
+  },
+  back: {
+    display: 'flex',
+    position: 'absolute',
+    top: '635px',
+    left: '763px',
+    backgroundColor: '#B9B9B9',
+    color: '#fff',
+  },
 }));
 
 export default function PacienteCadastrar() {
+
   const classes = useStyles();
 
   return (
@@ -61,50 +78,50 @@ export default function PacienteCadastrar() {
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
-        <div className="scrollInput">
-          <Grid container spacing={3}>
-            <div className="register">
-              <h1 className="registerTitle">Cadastro de Paciente</h1>
-              <DataCompleta />
-            </div>
-            
-            <div className="formData1">
+          <div className="scrollInput">
+            <Grid container spacing={3}>
+              <div className="register">
+                <h1 className="registerTitle">Cadastro de Paciente</h1>
+                <DataCompleta />
+              </div>
+
+              <div className="formData1">
+                <h2 className="titleForm1">Dados Pessoais</h2>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} sm={6} className="inputForm">
+                    <fieldset className="fieldsetName">
+                      <legend className="legend">Nome</legend>
+                      <InputText />
+                    </fieldset>
+                  </Grid>
+                  <Grid item xs={12} sm={6} className="inputForm">
+                    <fieldset className="fieldsetNumber">
+                      <legend className="legend">Celular</legend>
+                      <InputNumberPhone />
+                    </fieldset>
+                  </Grid>
+                  <Grid item xs={12} sm={6} className="inputForm">
+                    <fieldset className="fieldsetOptions">
+                      <legend className="legend">Status</legend>
+                      <SelectStatus />
+                    </fieldset>
+                  </Grid>
+                  <Grid item xs={12} sm={6} className="inputForm">
+                    <fieldset className="fieldsetBirth">
+                      <legend className="legend">Data Nascimento</legend>
+                      <InputBirthDate />
+                    </fieldset>
+                  </Grid>
+                </Grid>
+              </div>
+            </Grid>
+            <div className="formData2">
               <h2 className="titleForm1">Dados Pessoais</h2>
-              <Grid container spacing={2}>
-                <Grid item xs={12} sm={6} className="inputForm">
-                  <fieldset className="fieldsetName">
-                  <legend className="legend">Nome</legend>
-                  <InputText />
-                  </fieldset>
-                </Grid>
-                <Grid item xs={12} sm={6} className="inputForm">
-                <fieldset className="fieldsetNumber">
-                  <legend className="legend">Celular</legend>
-                    <InputNumberPhone />
-                  </fieldset>
-                </Grid>
-                <Grid item xs={12} sm={6} className="inputForm">
-                  <fieldset className="fieldsetOptions">
-                  <legend className="legend">Status</legend>
-                  <SelectStatus />
-                  </fieldset>
-                </Grid>
-                <Grid item xs={12} sm={6} className="inputForm">
-                  <fieldset className="fieldsetBirth">
-                  <legend className="legend">Data Nascimento</legend>
-                  <InputBirthDate />
-                  </fieldset>
-                </Grid>
-              </Grid>
-            </div>
-            <Box pt={4} className="footer">
-              <Footer className="textFooter"/>
-            </Box>
-          </Grid>
-          <div className="formData2">
-          <h2 className="titleForm1">Dados Pessoais</h2>
+              <InputAdress />
+            </div>          
           </div>
-          </div>
+          <Button variant="contained" className={classes.saveData}>Salvar Dados</Button>
+          <Button variant="contained" className={classes.back}>Voltar</Button>
         </Container>
       </main>
     </div>
