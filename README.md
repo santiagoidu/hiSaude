@@ -1,7 +1,7 @@
 <h1 align="center">
     <img alt="Back-End" src="./.github/logo.svg" height="100px" />
-    <br>Back-End Hi! Healtcare<br/>
-    Node.js | JavaScript | MongoDB
+    <br>FullStack Hi! Healtcare<br/>
+    Node.js | React.js | MongoDB
 </h1>
 
 <p align="center">
@@ -14,6 +14,8 @@
 
 ## :bookmark: Sobre
 
+
+--------------- Ignorar daqui para baixo ainda estou trabalhando na documentação -----------------
 O **Back-End** deste teste é um Bonus. Logo, esta aplicação oferece CRUD completo, podendo adicionar informações como um paciente, e seus respectivos dados: Nome, Rua/AV, CEP, Bairro, Complemento, Cidade, UF, Celular, Data Nacimento, E-mail e Senha.
   
 Este projeto foi idealizado apos ganhar uma nova oportunidade para apresentação do meu teste.

@@ -8,13 +8,13 @@ module.exports = {
         res.json(pacientes)
     },
     async create(req, res){
-        const {nome_paciente, celular_paciente, data_nascimento, status_ativo, email_paciente, senha_paciente} = req.body
+        const {nome_paciente, celular_paciente, data_nascimento, status_ativo} = req.body
 
         let data = {}
 
         let user = await Paciente.findOne({email_paciente})
         if(!user){
-            data = {nome_paciente, celular_paciente, data_nascimento, status_ativo, email_paciente, senha_paciente}
+            data = {nome_paciente, celular_paciente, data_nascimento, status_ativo}
             user = await Paciente.create(data)
             return res.status(200).json(user)
         }else{
@@ -33,8 +33,8 @@ module.exports = {
         return res.json(pacientes)
     },
     async update(req, res){
-        const { _id, nome_paciente, celular_paciente, data_nascimento, status_ativo, cep, rua, numero, complemento, bairro, cidade, uf, email_paciente, senha_paciente } = req.body
-        const data = {nome_paciente, celular_paciente, data_nascimento, status_ativo, cep, rua, numero, complemento, bairro, cidade, uf, email_paciente, senha_paciente}
+        const { _id, nome_paciente, celular_paciente, data_nascimento, status_ativo, cep, rua, numero, complemento, bairro, cidade, uf } = req.body
+        const data = {nome_paciente, celular_paciente, data_nascimento, status_ativo, cep, rua, numero, complemento, bairro, cidade, uf}
         const pacientes = await Paciente.findOneAndUpdate({_id}, data, {new:true})
         res.json(pacientes)
     }
