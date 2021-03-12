@@ -50,8 +50,9 @@ export default function InputAdress() {
         const response = await fetch(`https://brasilapi.com.br/api/cep/v1/${cep}`)
         const data = await response.json()
 
-        //PRENCHIMENTO AUTOMATICO INPUTS
-        //
+        // #===================================================#
+        // #         PRENCHIMENTO AUTOMATICO INPUTS            #
+        // #===================================================#
         //----------------------RUA-----------------------------
         if (data.street !== undefined && data.street !== null) {
           document.getElementById('rua').value = data.street

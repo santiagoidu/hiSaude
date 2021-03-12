@@ -17,8 +17,6 @@ import InputAdress from '../../../components/inputs/inputAdress'
 
 import MenuAdmin from '../../../components/menu-admin';
 
-import Footer from '../../../components/footer-admin';
-
 const useStyles = makeStyles((theme) => ({
   registerTitle: {
     color: '#068D54',
@@ -55,6 +53,10 @@ const useStyles = makeStyles((theme) => ({
     left: '604px',
     backgroundColor: '#068D54',
     color: '#fff',
+    '&:hover': {
+      backgroundColor: '#068d55da',
+    }
+
   },
   back: {
     display: 'flex',
@@ -63,6 +65,9 @@ const useStyles = makeStyles((theme) => ({
     left: '763px',
     backgroundColor: '#B9B9B9',
     color: '#fff',
+    '&:hover': {
+      backgroundColor: '#B9B9B9',
+    }
   },
 }));
 

@@ -10,7 +10,7 @@ export default function Copyright() {
       <Typography color="textSecondary" align="center">
         {'Copyright © '}
         <Link color="inherit" href="https://github.com/santiagoidu">
-          CRUD for Hi! Healtcare Intelligence
+          Por Marco Tulio Santiago
         </Link>{' '}
         {new Date().getFullYear()}
         {'.'}

@@ -1,3 +1,4 @@
+/*=========================== Pagina de cadastro Paciente ========================= */
 /* Estilização dos inputs dos formularios */
 .formData1 {
     position: absolute;
@@ -33,23 +34,6 @@
     line-height: 20px;
 }
 
-.input {
-        box-shadow: none;
-        font: inherit;
-        color: #000;
-        width: 405px;
-        height: auto;
-        
-        border: 0;
-        outline: rgba(0, 0, 0, 0);
-        border-color: rgba(0, 0, 0, 0);
-        height:27px;
-        margin: 0;
-        display: block;
-        padding:1px 1px 2px;
-        min-width: 0;
-        background: none;
-}
 
 .inputLocal {
         box-shadow: none;
@@ -67,6 +51,24 @@
         padding:1px 1px 2px;
         min-width: 0;
         background: none;
+}
+
+.input {
+    box-shadow: none;
+    font: inherit;
+    color: #000;
+    width: 405px;
+    height: auto;
+    
+    border: 0;
+    outline: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    height:27px;
+    margin: 0;
+    display: block;
+    padding:1px 1px 2px;
+    min-width: 0;
+    background: none;
 }
 
 .inputForm {
@@ -270,4 +272,96 @@
     font-size: 12px;
     color: rgba(78, 78, 78, 0.5);
 }
- 
+
+/*============================= Pagina de cadastro Usuario =============================*/
+/* Box envolta dos inputs e do botão pagina */
+#registerUser {
+    position: absolute;
+    width: 516px;
+    height: 390px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+/* Tratamento dos inputs */
+.input2 {
+    box-shadow: none;
+    font: inherit;
+    color: #000;
+    width: 260px;
+    height: auto;
+    
+    border: 0;
+    outline: rgba(0, 0, 0, 0);
+    border-color: rgba(255, 32, 32, 0);
+    height:27px;
+    margin: 0;
+    display: block;
+    padding:1px 1px 2px;
+    min-width: 0;
+    background: none;
+}
+
+.fieldsetUserName {
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    width: 340px;
+    left: 90.5px;
+
+    border: 0.5px solid rgba(0, 0, 0, 0.42);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.fieldsetRegister {
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    width: 340px;
+    left: 90.5px;
+
+    border: 0.5px solid rgba(0, 0, 0, 0.42);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.fieldseUserEmail {
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    width: 340px;
+    left: 95px;
+    margin-top: 5px;
+
+    border: 0.5px solid rgba(0, 0, 0, 0.42);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+.fieldsetPassword {
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    width: 340px;
+    left: 95px;
+    margin-top: 5px;
+
+    border: 0.5px solid rgba(0, 0, 0, 0.42);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.fieldsetPassword {
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    width: 340px;
+    left: 90.5px;
+    margin-top: 5px;
+
+    border: 0.5px solid rgba(0, 0, 0, 0.42);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.strongPassword {
+    
+}
