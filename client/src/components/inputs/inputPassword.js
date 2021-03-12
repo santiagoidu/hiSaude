@@ -34,6 +34,15 @@ export default function InputPassword() {
   
   
   const { register } = useForm();
+  const normalizeText = (value) => {
+    let 
+    let pattern =      
+    
+        console.log(email.match(pattern)); 
+        return email.match(pattern);    
+    
+    }
+  
 
   return (
     <React.Fragment>
